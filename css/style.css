@@ -570,13 +570,24 @@ img {
     cursor: pointer;
     box-sizing: border-box;
 }
+.close-logo:hover,
+.close-logo:focus {
+    fill: var(--accent-color);
+    transition: fill 250ms;
+}
 .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 .modal-field {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
+}
+.modal-field-area {
+    margin-bottom: 20px;
+}
+.modal-field-policy {
+    margin-bottom: 30px;
 }
 .modal-title {
     font-weight: 700;
@@ -584,7 +595,7 @@ img {
     line-height: 0.76;
     text-align: center;
     color: var(--primarly-black-color);
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 .modal-input {
     width: 100%;
@@ -595,6 +606,7 @@ img {
     padding-left: 42px;
     outline: none;
     transition: border-color 250ms;
+    transition: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input:focus {
     border-color: var(--accent-color);
@@ -611,6 +623,7 @@ img {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms;
+    transition: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-label {
     font-weight: 400;
@@ -654,6 +667,7 @@ img {
     background-position: center;
 }
 .policy {
+    margin-left: 4px;
     color: var(--accent-color);
 }
 .submit-btn-modal {
@@ -676,9 +690,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-.mailing-list,
-.mailing-label {
+.mailing {
     margin-left: 93px;
 }
 .mailing-list{
@@ -695,6 +709,7 @@ img {
     text-transform: uppercase;
     color: var(--primarly-white-color);
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .mailing-input {
     width: 358px;
@@ -704,6 +719,7 @@ img {
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
+    color: var(--primarly-white-color);
 }
 .mailing-input::placeholder {
     color: rgba(255, 255, 255, 0.6)
